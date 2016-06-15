@@ -2,10 +2,11 @@
 #define CHERRY_PANDA_LOADER_H
 
 #include <string>
-#include "cherry.h"
-#include "cherry_application.h"
 
 namespace cherry {
+
+    class Cherry;
+    class CherryApplication;
 
     class CherryLoader {
 

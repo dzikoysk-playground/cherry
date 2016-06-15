@@ -14,6 +14,7 @@ namespace cherry {
     public:
         CherryParser(std::string *source_ptr);
 
+        virtual Executable *parse() override;
     };
 
 }

@@ -8,7 +8,7 @@ namespace cherry {
     class Parser {
 
     public:
-        virtual cherry::Executable parse() = 0;
+        virtual Executable* parse() = 0;
 
     };
 

@@ -1,10 +1,11 @@
 #ifndef CHERRY_CHERRY_H
 #define CHERRY_CHERRY_H
 
-#include "cherry_loader.h"
-
 namespace cherry {
 
+    class CherryLoader;
+    class CherryApplication;
+    
     class Cherry {
 
     private:
