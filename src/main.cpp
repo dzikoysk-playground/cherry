@@ -1,5 +1,6 @@
 #include <string>
 #include "core/cherry.h"
+#include "core/cherry_loader.h"
 
 int main(int count, char *arguments[]) {
     if (count < 2) {
