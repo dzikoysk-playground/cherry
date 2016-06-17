@@ -5,10 +5,10 @@
 #include <iostream>
 #include <fstream>
 
-cherry::CherryLoader::CherryLoader(Cherry *ptr_cherry) : ptr_cherry(ptr_cherry) {
+cherry::CherryLoader::CherryLoader(Cherry* ptr_cherry) : ptr_cherry(ptr_cherry) {
 }
 
-cherry::CherryApplication *cherry::CherryLoader::loadApplication(std::string *ptr_fileName) {
+cherry::CherryApplication* cherry::CherryLoader::loadApplication(std::string* ptr_fileName) {
     std::ifstream applicationFile(*ptr_fileName);
     std::string source;
 
@@ -19,10 +19,7 @@ cherry::CherryApplication *cherry::CherryLoader::loadApplication(std::string *pt
 
     cherry::CherryParser parser(&source);
     cherry::Executable* executable = parser.parse();
-    cherry::CherryApplication *cherryApplication = new cherry::CherryApplication(executable);
+    cherry::CherryApplication* cherryApplication = new cherry::CherryApplication(executable);
 
     return cherryApplication;
 }
-
-
-

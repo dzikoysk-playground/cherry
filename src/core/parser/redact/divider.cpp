@@ -1,10 +1,9 @@
 #include "divider.h"
 
-cherry::Divider::Divider(std::string *source) : source(source) {
+cherry::Divider::Divider(std::string* source) : source(source) {
 }
 
 
-std::string * cherry::Divider::getNext() {
+std::string* cherry::Divider::getNext() {
     return nullptr;
 }
-

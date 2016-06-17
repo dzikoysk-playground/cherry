@@ -6,17 +6,18 @@
 namespace cherry {
 
     class Cherry;
+
     class CherryApplication;
 
     class CherryLoader {
 
     private:
-        Cherry *ptr_cherry;
+        Cherry* ptr_cherry;
 
     public:
-        CherryLoader(Cherry *ptr_cherry);
+        CherryLoader(Cherry* ptr_cherry);
 
-        CherryApplication *loadApplication(std::string *ptr_fileName);
+        CherryApplication* loadApplication(std::string* ptr_fileName);
     };
 
 }

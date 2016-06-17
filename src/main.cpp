@@ -2,7 +2,7 @@
 #include "core/cherry.h"
 #include "core/cherry_loader.h"
 
-int main(int count, char *arguments[]) {
+int main(int count, char* arguments[]) {
     if (count < 2) {
         return 0;
     }
@@ -17,4 +17,3 @@ int main(int count, char *arguments[]) {
 
     return 0;
 }
-

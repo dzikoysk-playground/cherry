@@ -8,12 +8,12 @@ namespace cherry {
     class Divider {
 
     private:
-        std::string *source;
+        std::string* source;
 
     public:
-        Divider(std::string *source);
+        Divider(std::string* source);
 
-        std::string * getNext();
+        std::string* getNext();
 
     };
 

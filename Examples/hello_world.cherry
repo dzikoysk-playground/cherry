@@ -1,0 +1,4 @@
+// Comment
+public static void main() {
+    System.log("Hello World");
+}

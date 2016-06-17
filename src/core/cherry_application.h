@@ -13,9 +13,9 @@ namespace cherry {
         std::vector<Executable*> executables;
 
     public:
-        CherryApplication(Executable *executable);
+        CherryApplication(Executable* executable);
 
-        std::vector<Executable*> *getExecutables();
+        std::vector<Executable*>* getExecutables();
 
     };
 

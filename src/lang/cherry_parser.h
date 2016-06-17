@@ -9,12 +9,12 @@ namespace cherry {
     class CherryParser : public Parser {
 
     private:
-        std::string *source;
+        std::string* source;
 
     public:
-        CherryParser(std::string *source_ptr);
+        CherryParser(std::string* source_ptr);
 
-        virtual Executable *parse() override;
+        virtual Executable* parse() override;
     };
 
 }
