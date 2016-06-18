@@ -5,6 +5,7 @@
 #include "../core/parser/parser.h"
 #include "../core/parser/redact/divider/divider.h"
 #include "elements/wrapper.h"
+#include "../core/parser/redact/formatter/formatter.h"
 
 namespace cherry {
 
@@ -12,15 +13,29 @@ namespace cherry {
 
         private:
             std::wstring* source;
-            cherry::Divider* divider;
+            Wrapper* wrapper;
+            Divider* divider;
+            Formatter* formatter;
 
         public:
             CherryParser(std::wstring* source_ptr);
 
+            ~CherryParser();
+
             virtual Wrapper* parse() override;
 
-            cherry::Divider* getDivider() {
+            Executable* parseFragment(Fragment* fragment_ptr);
+
+            Formatter* getFormatter() {
+                return formatter;
+            }
+
+            Divider* getDivider() {
                 return divider;
+            }
+
+            Wrapper* getWrapper() {
+                return wrapper;
             }
 
             std::wstring* getSource() {

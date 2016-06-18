@@ -1,5 +1,5 @@
-#ifndef TESTS_WRAPPER_H
-#define TESTS_WRAPPER_H
+#ifndef CHERRY_WRAPPER_H
+#define CHERRY_WRAPPER_H
 
 
 #include <vector>
@@ -7,20 +7,22 @@
 
 namespace cherry {
 
-class Wrapper : public Executable {
+    class Wrapper : public Executable {
 
-    protected:
-        std::vector<Executable*> executables;
+        protected:
+            std::vector<Executable*> executables;
 
-    public:
-        void execute();
+        public:
+            void execute();
 
-        std::vector<Executable*> getExecutables() {
-            return executables;
-        }
+            void addExecutable(Executable* executable_ptr);
 
-};
+            std::vector<Executable*> getExecutables() {
+                return executables;
+            }
+
+    };
 
 }
 
-#endif //TESTS_WRAPPER_H
+#endif //CHERRY_WRAPPER_H

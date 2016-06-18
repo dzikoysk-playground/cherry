@@ -1,9 +1,15 @@
 #include "cherry_application.h"
-#include "work/executable.h"
 
 cherry::CherryApplication::CherryApplication(cherry::Executable* executable_ptr) {
     executables = std::vector<Executable*>();
     addExecutable(executable_ptr);
+}
+
+
+void cherry::CherryApplication::execute() {
+    for (Executable* executable : executables) {
+        executable->execute();
+    }
 }
 
 void cherry::CherryApplication::addExecutable(cherry::Executable* executable_ptr) {

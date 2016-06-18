@@ -1,5 +1,5 @@
-#ifndef TESTS_FRAGMENT_H
-#define TESTS_FRAGMENT_H
+#ifndef CHERRY_FRAGMENT_H
+#define CHERRY_FRAGMENT_H
 
 #include <string>
 
@@ -14,6 +14,20 @@ namespace cherry {
 
         public:
             Fragment();
+
+            Fragment(std::wstring* fragment_ptr);
+
+            void setFragment(std::wstring* fragment_ptr) {
+                this->fragment = fragment_ptr;
+            }
+
+            void setLine(unsigned long long int line) {
+                this->line = line;
+            }
+
+            void setCaretPosition(unsigned long long int caret) {
+                this->caret = caret;
+            }
 
             unsigned long long int getLine() {
                 return line;
@@ -31,4 +45,4 @@ namespace cherry {
 
 }
 
-#endif //TESTS_FRAGMENT_H
+#endif //CHERRY_FRAGMENT_H

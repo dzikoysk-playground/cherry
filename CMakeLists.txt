@@ -1,10 +1,6 @@
 cmake_minimum_required(VERSION 3.5)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
-project(Cherry)
-file(GLOB_RECURSE sources src/*.cpp)
-add_executable(Cherry ${sources})
-
 project(Tests)
 FILE(GLOB_RECURSE sources src/*.cpp tests/*.cpp)
 FOREACH (item ${sources})
@@ -14,3 +10,7 @@ FOREACH (item ${sources})
 ENDFOREACH (item)
 MESSAGE(STATUS "${sources}")
 add_executable(Tests ${sources})
+
+project(Cherry)
+file(GLOB_RECURSE sources src/*.cpp)
+add_executable(Cherry ${sources})

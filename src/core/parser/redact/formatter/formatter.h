@@ -1,5 +1,5 @@
-#ifndef TESTS_FORMATTER_H
-#define TESTS_FORMATTER_H
+#ifndef CHERRY_FORMATTER_H
+#define CHERRY_FORMATTER_H
 
 #include "../fragment.h"
 
@@ -14,4 +14,4 @@ namespace cherry {
 
 }
 
-#endif //TESTS_FORMATTER_H
+#endif //CHERRY_FORMATTER_H

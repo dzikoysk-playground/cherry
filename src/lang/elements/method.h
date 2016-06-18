@@ -1,5 +1,5 @@
-#ifndef TESTS_METHOD_H
-#define TESTS_METHOD_H
+#ifndef CHERRY_METHOD_H
+#define CHERRY_METHOD_H
 
 #include <string>
 #include "../../core/work/executable.h"
@@ -15,4 +15,4 @@ class Method : public cherry::Executable {
 };
 
 
-#endif //TESTS_METHOD_H
+#endif //CHERRY_METHOD_H
