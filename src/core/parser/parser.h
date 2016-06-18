@@ -7,8 +7,8 @@ namespace cherry {
 
     class Parser {
 
-    public:
-        virtual Executable* parse() = 0;
+        public:
+            virtual Executable* parse() = 0;
 
     };
 

@@ -3,18 +3,30 @@
 
 #include <string>
 #include "../core/parser/parser.h"
+#include "../core/parser/redact/divider/divider.h"
+#include "elements/wrapper.h"
 
 namespace cherry {
 
     class CherryParser : public Parser {
 
-    private:
-        std::string* source;
+        private:
+            std::wstring* source;
+            cherry::Divider* divider;
 
-    public:
-        CherryParser(std::string* source_ptr);
+        public:
+            CherryParser(std::wstring* source_ptr);
 
-        virtual Executable* parse() override;
+            virtual Wrapper* parse() override;
+
+            cherry::Divider* getDivider() {
+                return divider;
+            }
+
+            std::wstring* getSource() {
+                return source;
+            }
+
     };
 
 }

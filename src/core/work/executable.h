@@ -5,8 +5,8 @@ namespace cherry {
 
     class Executable {
 
-    public:
-        virtual void execute() = 0;
+        public:
+            virtual void execute() = 0;
 
     };
 

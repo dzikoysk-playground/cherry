@@ -16,8 +16,3 @@ cherry::CherryApplication* Cherry::loadScript(std::string* fileName) {
 cherry::CherryLoader* Cherry::getCherryLoader() {
     return cherryLoader;
 }
-
-static Cherry* initialize() {
-    Cherry* cherry = new Cherry();
-    return cherry;
-}

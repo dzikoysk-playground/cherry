@@ -1,4 +1,4 @@
-// Comment
+// Method
 public static void main() {
     System.log("Hello World");
 }

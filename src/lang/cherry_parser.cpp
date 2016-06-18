@@ -1,9 +1,14 @@
 #include "cherry_parser.h"
+#include "elements/wrapper.h"
 
-cherry::CherryParser::CherryParser(std::string* source_ptr) : source(source_ptr) {
-
+cherry::CherryParser::CherryParser(std::wstring* source_ptr) : source(source_ptr) {
+    divider = new cherry::Divider(source_ptr);
 }
 
-cherry::Executable* cherry::CherryParser::parse() {
-    return nullptr; // TODO: implement? change to virtual?
+cherry::Wrapper* cherry::CherryParser::parse() {
+    while (divider->hasNext()) {
+
+    }
+
+    return nullptr;
 }
