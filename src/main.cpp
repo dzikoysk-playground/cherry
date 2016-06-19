@@ -8,11 +8,11 @@ int main(int count, char* arguments[]) {
     }
 
     cherry::Cherry cherry;
-    cherry::CherryLoader cherryLoader = *cherry.getCherryLoader();
+    cherry::CherryLoader cherry_loader = *cherry.getCherryLoader();
 
     for (int i = 1; i < count; i++) {
-        std::string fileName = arguments[i];
-        cherryLoader.loadApplication(&fileName);
+        std::string file_name = arguments[i];
+        cherry_loader.loadApplication(&file_name);
     }
 
     return 0;

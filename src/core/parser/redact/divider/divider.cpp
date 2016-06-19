@@ -7,11 +7,11 @@ cherry::Divider::Divider(std::wstring* source_ptr) : source(source_ptr) {
 }
 
 cherry::Fragment* cherry::Divider::getNext() {
-    std::wstring fragmentSource = L"";
+    std::wstring fragment_source = L"";
 
     for (; caret < source->size(); caret++) {
         const wchar_t character = source->at(caret);
-        fragmentSource += character;
+        fragment_source += character;
 
         if (character == '{' || character == ';' || character == '}') {
             caret++;
@@ -23,7 +23,7 @@ cherry::Fragment* cherry::Divider::getNext() {
     }
 
     Fragment* fragment = new Fragment();
-    fragment->setFragment(&fragmentSource);
+    fragment->setFragment(&fragment_source);
     fragment->setLine(line);
     fragment->setCaretPosition(caret);
 

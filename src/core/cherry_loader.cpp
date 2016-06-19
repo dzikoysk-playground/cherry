@@ -8,21 +8,22 @@
 #include <sstream>
 #include <iostream>
 
-cherry::CherryLoader::CherryLoader(Cherry* ptr_cherry) : ptr_cherry(ptr_cherry) {
+cherry::CherryLoader::CherryLoader(Cherry* cherry_ptr) : cherry(cherry_ptr) {
 }
 
 cherry::CherryApplication* cherry::CherryLoader::loadApplication(std::string* file_name_ptr) {
-    std::wifstream applicationFile(*file_name_ptr);
-    applicationFile.imbue(std::locale(std::locale(), new std::codecvt_utf8<wchar_t>));
+    std::wifstream application_file(*file_name_ptr);
+    application_file.imbue(std::locale(std::locale(), new std::codecvt_utf8<wchar_t>));
     std::wstringstream wss;
-    wss << applicationFile.rdbuf();
-    std::wstring source = wss.str();
+    wss << application_file.rdbuf();
+    application_file.close();
 
+    std::wstring source = wss.str();
     std::wcout << source << std::endl;
 
     cherry::CherryParser parser(&source);
     cherry::Executable* executable = parser.parse();
-    cherry::CherryApplication* cherryApplication = new cherry::CherryApplication(executable);
+    cherry::CherryApplication* cherry_application = new cherry::CherryApplication(executable);
 
-    return cherryApplication;
+    return cherry_application;
 }

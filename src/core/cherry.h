@@ -10,12 +10,12 @@ namespace cherry {
     class Cherry {
 
         private:
-            CherryLoader* cherryLoader;
+            CherryLoader* cherry_loader;
 
         public:
             Cherry();
 
-            CherryApplication* loadScript(std::string* fileName);
+            CherryApplication* loadScript(std::string* file_name_ptr);
 
             CherryLoader* getCherryLoader();
 

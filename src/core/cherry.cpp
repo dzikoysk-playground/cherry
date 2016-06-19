@@ -6,13 +6,13 @@
 using cherry::Cherry;
 
 Cherry::Cherry() {
-    cherryLoader = new CherryLoader(this);
+    cherry_loader = new CherryLoader(this);
 }
 
-cherry::CherryApplication* Cherry::loadScript(std::string* fileName) {
-    return cherryLoader->loadApplication(fileName);
+cherry::CherryApplication* Cherry::loadScript(std::string* file_name_ptr) {
+    return cherry_loader->loadApplication(file_name_ptr);
 }
 
 cherry::CherryLoader* Cherry::getCherryLoader() {
-    return cherryLoader;
+    return cherry_loader;
 }
