@@ -7,6 +7,10 @@ CharArrayDistributor::CharArrayDistributor(std::wstring* string_ptr) {
     this->array = string_ptr->c_str();
 }
 
+CharArrayDistributor::~CharArrayDistributor() {
+    delete array;
+}
+
 wchar_t CharArrayDistributor::previous() {
     if (index - 1 < length) {
         index--;

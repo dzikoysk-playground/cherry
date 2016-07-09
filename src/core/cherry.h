@@ -15,6 +15,8 @@ namespace cherry {
         public:
             Cherry();
 
+            ~Cherry();
+
             CherryApplication* loadScript(std::string* file_name_ptr);
 
             CherryLoader* getCherryLoader();

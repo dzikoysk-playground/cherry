@@ -17,6 +17,8 @@ namespace cherry {
 
             Fragment(std::wstring* fragment_ptr);
 
+            ~Fragment();
+
             void setFragment(std::wstring* fragment_ptr) {
                 this->fragment = fragment_ptr;
             }

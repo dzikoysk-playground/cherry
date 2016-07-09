@@ -6,15 +6,17 @@
 
 namespace cherry {
 
-    class CherryApplication : public Executable {
+    class CherryApplication {
 
         private:
             std::vector<Executable*> executables;
 
         public:
-            void execute();
-
             CherryApplication(Executable* executable_ptr);
+
+            ~CherryApplication();
+
+            void launch();
 
             void addExecutable(Executable* executable_ptr);
 

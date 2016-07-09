@@ -15,6 +15,8 @@ namespace cherry {
         public:
             CharArrayDistributor(std::wstring* string_ptr);
 
+            ~CharArrayDistributor();
+
             wchar_t previous();
 
             wchar_t current();

@@ -9,6 +9,10 @@ Cherry::Cherry() {
     cherry_loader = new CherryLoader(this);
 }
 
+Cherry::~Cherry() {
+    delete cherry_loader;
+}
+
 cherry::CherryApplication* Cherry::loadScript(std::string* file_name_ptr) {
     return cherry_loader->loadApplication(file_name_ptr);
 }

@@ -13,4 +13,6 @@ add_executable(Tests ${sources})
 
 project(Cherry)
 file(GLOB_RECURSE sources src/*.cpp)
-add_executable(Cherry ${sources} src/lang/elements/class.cpp src/lang/elements/class.h)
+add_executable(Cherry ${sources})
+
+target_link_libraries(Cherry pthread)

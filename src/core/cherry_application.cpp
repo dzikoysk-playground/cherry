@@ -5,8 +5,11 @@ cherry::CherryApplication::CherryApplication(cherry::Executable* executable_ptr)
     addExecutable(executable_ptr);
 }
 
+cherry::CherryApplication::~CherryApplication() {
+    delete &executables;
+}
 
-void cherry::CherryApplication::execute() {
+void cherry::CherryApplication::launch() {
     for (Executable* executable : executables) {
         executable->execute();
     }
@@ -22,3 +25,5 @@ void cherry::CherryApplication::addExecutable(cherry::Executable* executable_ptr
 std::vector<cherry::Executable*>* cherry::CherryApplication::getExecutables() {
     return &executables;
 }
+
+

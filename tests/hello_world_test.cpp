@@ -10,10 +10,7 @@ int main(int argc, char* args[]) {
     std::string fileName("hello_world.cherry");
     cherry::CherryApplication cherry_application = *cherry_loader.loadApplication(&fileName);
 
-    for (int i = 0; i < cherry_application.getExecutables()->size(); i++) {
-        cherry::Executable* executable = cherry_application.getExecutables()->at(i);
-        executable->execute();
-    }
+    cherry_application.launch();
 
     std::cout << "End of App" << std::endl;
 }

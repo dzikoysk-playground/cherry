@@ -25,5 +25,10 @@ cherry::CherryApplication* cherry::CherryLoader::loadApplication(std::string* fi
     cherry::Executable* executable = parser.parse();
     cherry::CherryApplication* cherry_application = new cherry::CherryApplication(executable);
 
+    delete &parser;
+    delete &source;
+    delete &wss;
+    delete &application_file;
+
     return cherry_application;
 }
