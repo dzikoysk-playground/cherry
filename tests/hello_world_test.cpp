@@ -1,7 +1,7 @@
 #include <iostream>
-#include "../src/core/cherry.h"
-#include "../src/core/cherry_loader.h"
-#include "../src/core/cherry_application.h"
+#include "../src/cherry/cherry.h"
+#include "../src/cherry/cherry_loader.h"
+#include "../src/cherry/cherry_application.h"
 
 int main(int argc, char* args[]) {
     cherry::Cherry cherry = cherry::Cherry();

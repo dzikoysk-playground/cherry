@@ -2,10 +2,10 @@
 #define CHERRY_CHERRY_PARSER_H
 
 #include <string>
-#include "../core/parser/parser.h"
-#include "../core/parser/redact/divider/divider.h"
 #include "elements/wrapper.h"
-#include "../core/parser/redact/formatter/formatter.h"
+#include "../cherry-core/interpreter/parser/parser.h"
+#include "../cherry-core/util/redact/formatter/formatter.h"
+#include "../cherry-core/util/redact/divider/divider.h"
 
 namespace cherry {
 

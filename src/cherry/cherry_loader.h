@@ -18,6 +18,7 @@ namespace cherry {
             CherryLoader(Cherry* cherry_ptr);
 
             CherryApplication* loadApplication(std::string* file_name_ptr);
+
     };
 
 }

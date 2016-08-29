@@ -1,6 +1,6 @@
 #include "class.h"
 
-Class::~Class() {
+cherry::Class::~Class() {
     delete className;
 }
 

@@ -1,4 +1,4 @@
-#include "../lang/cherry_parser.h"
+#include "cherry_parser.h"
 #include "cherry_loader.h"
 #include "cherry_application.h"
 #include "cherry.h"

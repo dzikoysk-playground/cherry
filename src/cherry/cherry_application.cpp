@@ -9,10 +9,11 @@ cherry::CherryApplication::~CherryApplication() {
     delete &executables;
 }
 
-void cherry::CherryApplication::launch() {
+int cherry::CherryApplication::launch() {
     for (Executable* executable : executables) {
         executable->execute();
     }
+    return 0;
 }
 
 void cherry::CherryApplication::addExecutable(cherry::Executable* executable_ptr) {

@@ -1,7 +1,7 @@
 #ifndef CHERRY_PARSER_H
 #define CHERRY_PARSER_H
 
-#include "../work/executable.h"
+#include "../../work/executable.h"
 
 namespace cherry {
 

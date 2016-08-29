@@ -1,9 +1,8 @@
 #ifndef CHERRY_WRAPPER_H
 #define CHERRY_WRAPPER_H
 
-
 #include <vector>
-#include "../../core/work/executable.h"
+#include "../../cherry-core/work/executable.h"
 
 namespace cherry {
 

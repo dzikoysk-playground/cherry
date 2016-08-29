@@ -1,9 +1,9 @@
 #include <string>
 #include <thread>
 #include <iostream>
-#include "core/cherry.h"
-#include "core/cherry_loader.h"
-#include "core/cherry_application.h"
+#include "cherry/cherry.h"
+#include "cherry/cherry_loader.h"
+#include "cherry/cherry_application.h"
 
 int application_threads = 0;
 

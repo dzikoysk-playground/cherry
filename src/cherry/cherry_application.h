@@ -2,11 +2,12 @@
 #define CHERRY_CHERRY_APPLICATION_H
 
 #include <vector>
-#include "work/executable.h"
+#include "../cherry-core/work/executable.h"
+#include "../cherry-core/application.h"
 
 namespace cherry {
 
-    class CherryApplication {
+    class CherryApplication : public Application {
 
         private:
             std::vector<Executable*> executables;
@@ -16,7 +17,7 @@ namespace cherry {
 
             ~CherryApplication();
 
-            void launch();
+            virtual int launch() override;
 
             void addExecutable(Executable* executable_ptr);
 
