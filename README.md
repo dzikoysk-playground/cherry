@@ -1,8 +1,11 @@
 # Cherry
-A simple programming language written in C++, which syntax is similar to Java. 
 
-#### Details
-The purpose of the project is to track the development of the [Panda](https://github.com/Panda-Programming-Language/Panda) in C++.
+#### Abandoned
+**Developing this project does not make sense. Follow the [Panda](https://github.com/Panda-Programming-Language) organization to support promising projectes of this kind.**
+
+#### About
+
+A simple programming language written in C++, which syntax is similar to Java. Just a training.
 
 #### Example
 A simple example of printing the text in the console:
